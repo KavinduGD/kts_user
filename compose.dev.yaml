@@ -1,0 +1,16 @@
+name: kts
+
+services:
+  user:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        - VITE_GOOGLE_API_KEY=${VITE_GOOGLE_API_KEY}
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+    ports:
+      - 3001:3001
