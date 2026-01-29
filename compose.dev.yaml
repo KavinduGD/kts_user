@@ -13,4 +13,4 @@ services:
           path: ./src
           target: /app/src
     ports:
-      - 3001:3001
+      - 5174:5174
