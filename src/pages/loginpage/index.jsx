@@ -72,7 +72,7 @@ function Login() {
             JSON.stringify({
               ...res.data,
               expiry: now.getTime() + 3600000 * 24,
-            })
+            }),
           );
         }
         dispatch({ type: "LOGIN", payload: res.data });
@@ -122,8 +122,7 @@ function Login() {
           <div className="font-roboto_slab  text-[20px] xsm:text-[25px] md:text-[25px] sm:text-[30px] font-bold flex flex-col items-center leading-[92%] text-center">
             <p>International </p>
             <p>Academic Institution</p>
-
-            <p>Transport Management System</p>
+            <p>Transport Management System Pipeline check</p>
           </div>
         </div>
         <div className="mt-[40px] w-full items-center">
